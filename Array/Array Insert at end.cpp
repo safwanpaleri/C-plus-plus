@@ -1,4 +1,5 @@
 //Insert the user-input element at back of an given array.
+
 #include <bits/stdc++.h>
 using namespace std;
 main()
@@ -6,7 +7,7 @@ main()
 	//runs the programe for infinite times
 	while(true)
 	{
-		//initializing array and required items.
+		//initialization of array and required items.
 		int a[]={1,2,3,4,5},b;
 		
 		//Taking inputs from user
