@@ -1,10 +1,12 @@
 //Insert an user-input element in a user given index in a given array;
+
 #include <bits/stdc++.h>
 using namespace std;
 main()
 {
+	//Runs the program for infinite times
 	while(true)
-	{	//initialising 
+	{	//initialization 
 		int b[]={1,2,3,4,5,0},a,in;
 		
 		//taking inputs from user
