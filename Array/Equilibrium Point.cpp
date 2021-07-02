@@ -6,7 +6,7 @@
 using namespace std;
 main()
 {
-	//initializing
+	//initialization
 	int n=5;
 	int a[]={1,3,5,2,2};
 	int lsum=0,sum=0,count= -1;
