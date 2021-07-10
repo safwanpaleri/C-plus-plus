@@ -3,7 +3,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//Have 2 solutions, 1. if the given problem is in array, 2. if the given problem is in vector.
+//Have 2 solutions,
+//1. if the given problem is in array, 2. if the given problem is in vector.
+
+//If the given problem is in vector.
 void usingVecotr(vector< vector<int> > &a, vector< vector<int> > &b)
 {
 	//initializations
@@ -36,12 +39,12 @@ void usingVecotr(vector< vector<int> > &a, vector< vector<int> > &b)
 		}
 	}
 	else
-		cout<<"The rows and the coloumns does not match"<<endl;
-	
-			
+		cout<<"The rows and the coloumns does not match"<<endl;			
 }
+
 main()
 {
+	//if the given problem is in array.
 	//initializations
 	int a[3][3] = { {11,12,13}, {24,25,26} , {37,38,39} };
 	int b[3][3] = { {90,91,92}, {83,84,85} , {76,77,78} };
