@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// this problem canbe solved by 2 ways. so i have done one in vector and other one in using array.
+// this problem can be solved by 2 ways. so i have done one in vector and other one in using array.
 void usingVector(vector< vector<int> > &matrix, int x)
 {
 	//initializations.
