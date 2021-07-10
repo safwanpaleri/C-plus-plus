@@ -1,59 +1,42 @@
 //Boundary Traversal of Matrix
+//print all the boundary elements of the given matrix.
 #include<bits/stdc++.h>
 using namespace std;
 
 main()
 {
+	//initializations
 	int n=5,m=4;
 	int mat[5][4] = { {1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20} };
-                      
+	
+        //traversing through the matrix row by row              
 	for(int i=0;i<n;i++)
 	{
+		//checking whether the current row is the frist one or the last one.
 		if(i==0 || i==n-1)
 		{
+			//if it is either of one, then print all the elements.
 			for(int j=0;j<m;j++)
-			{
 				cout<<mat[i][j]<<" ";
-			}
 			cout<<endl;
 		}
+		//if row is not first or the last.
 		else
 		{
+			//then print the elements present in the first and the last coloumn.
+			
+			//traversing through the coloumns.
 			for(int j=0;j<n;j++)
 			{
+				//checking whether the coloumn is first or last one.
+				//if yes print the element at that coloumn.
 				if(j==0||j==m-1)
-				{
 					cout<<mat[i][j]<<" ";
-				}
+				//else leave a space, just for looking good.
 				else
-				{
 					cout<<"  ";
-				}
 			}
 			cout<<endl;
 		}
 	}
-
-	cout<<"Using Array"<<endl;  
-
-	{
-	      
-	//first row
-    for(int i=0;i<m;i++)
-    	cout<<mat[0][i]<<" ";
-    //cout<<endl;
-    //last column
-    for(int j=1;j<n;j++)
-    	cout<<mat[j][m-1]<<" ";
-    //cout<<endl;
-    //last row
-    for(int k=m-2;k>=0;k--)
-    	cout<<mat[n-1][k]<<" ";
-    //cout<<endl;
-    //first colum
-    for(int l=n-2;l>=1;l--)
-    	cout<<mat[l][0]<<" ";
-    //cout<<endl;
-    
-	}	
 }
