@@ -76,9 +76,16 @@ main()
 	vector< vector<int> > matrix;
 	for(int i=0;i<n;i++)
 	{
+		//we clear this vector every iteration.
+		//this is a temporary vector created for inserting into our vector, as the result vector is vector of vector.
 		mv.clear();
+		
+		//traversing through the array and storing it into vector one by one.
 		for(int j=0;j<m;j++)
 			mv.push_back(mat[i][j]);
+		
+		//after converting one row of matrix as vector. 
+		//that vector is added into the final vector.
 		matrix.push_back(mv);
 	}
     
